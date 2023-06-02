@@ -3,6 +3,7 @@ use std::io;
 // cargo build
 // cargo run
 // cargo check
+// cargo clean
 fn main() {
     let sum = add(3, 5);
     println!("Hello, world!");
