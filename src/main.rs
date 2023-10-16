@@ -1,16 +1,10 @@
-use guess;
-
-// cargo new
-// cargo build
-// cargo run
-// cargo check
-// cargo clean
+mod guess;
 
 fn main() {
     let sum = add(3, 5);
     println!("Hello, world!");
     println!("The sum of a + b is {sum}");
-    guess();
+    guess::guess();
 }
 
 fn add(a: i32, b: i32) -> i32 {
