@@ -5,10 +5,12 @@ use std::cmp::Ordering;
 pub fn guess() {
     println!("Guess a number!");
 
-    let secret_number = rand::thread_rng().gen_range(1..101);
+    let secret_number = rand::thread_rng().gen_range(1..101); // 1..=100
 
     if cfg!(debug_assertions) {
         println!("Secret number: {}", secret_number);
+    } else {
+        println!("Secret number: {}", "***");
     }
 
     loop {
