@@ -23,7 +23,7 @@ pub fn rectangle() {
     };
     dbg!(rect == rec);
     rect.double_width();
-    dbg!(rect);
+    // dbg!(rect);
     dbg!(rect.can_hold(&rec));
     dbg!(Rectangle::associated_fn(1));
 }
