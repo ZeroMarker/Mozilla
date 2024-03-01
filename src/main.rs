@@ -7,6 +7,7 @@ mod rectangle;
 mod ip;
 mod message;
 
+use source::housing::money;
 
 fn main() {
     basic::basic();
@@ -19,6 +20,8 @@ fn main() {
     user::create_user();
 
     rectangle::rectangle();
+
+    money::hello();
 }
 
 
