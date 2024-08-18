@@ -33,7 +33,7 @@ pub mod housing {
         }
     }
     mod price {
-        pub fn line() {
+        pub fn line() -> i32{
             2
         }
     }
