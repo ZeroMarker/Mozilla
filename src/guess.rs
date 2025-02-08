@@ -8,7 +8,6 @@ pub fn guess() {
     let secret_number = rand::thread_rng().gen_range(1..101); // 1..=100
 
     /// ## Release Environment
-    ///
     if cfg!(debug_assertions) {
         println!("Secret number: {}", secret_number);
     } else {

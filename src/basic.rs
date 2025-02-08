@@ -10,17 +10,21 @@ fn test() -> i32 {
     5
 }
 pub fn basic() -> i32{
-    let sum = add(3, 5);
+    let sum = add(3, test());
     println!("Hello, world!");
     println!("The sum of a + b is {sum}");
+
     const  THREE_HOURS_SECOND: u32 = 60 * 60 * 3;
+    println!("{}", THREE_HOURS_SECOND);
 
     let tup: (i32, f64, u64) = (11, 3.14, 33);
     let tuple: T = (33, 6.4);
     println!("{}",tuple.1);
+
     let mut pi = tup.2;
     pi = pi + 0;
-
+    println!("{}", pi);
+    
     //array
     let a = [3; 4];
 
